@@ -1,0 +1,14 @@
+<!-- <link rel="stylesheet" href="app.css"> -->
+<%- include ("partials/header.ejs") %>
+<h1>Hello to Post Section</h1>
+<% for(var i=0; i<postsv.length; i++) { %>
+    <li><%=postsv[i].title%> - <%=postsv[i].author%></li>
+<% }%>
+<br>
+<% postsv.forEach(function(i){ %>
+    <li>
+        <%= i.title %> - <%= i.author %>
+    </li>
+<% }) %>
+
+<%- include ("partials/footer.ejs") %>

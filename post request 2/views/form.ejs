@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        body{
+            color: #fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .container div{
+            background-color:rgb(46, 13, 46);
+            color: #fff;
+            padding: 30px;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="/public/list.css"> -->
+</head>
+<body>
+    <h1>Add Your Details</h1>
+    <form method="post" action="/add">
+    <div class="container">
+        
+       
+            <div>
+                
+                <input type="text" name="Namee" placeholder="Name" required>
+            </div>
+            <div>
+                
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div>
+                
+                <input type="text" name="RegNo" placeholder="RegNo" required>
+                
+            </div>
+            <div>
+                
+                <input type="radio" name="Gender" id="male" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="Gender" id="female" value="Female" >
+                <label for="female">Female</label><br>
+            </div>
+            <div>
+                
+                <input type="checkbox" id="slot1" name="slot" value="A">
+                <label for="slot1">A</label><br>
+                <input type="checkbox" id="slot2" name="slot" value="B">
+                <label for="slot2">B</label><br>
+                <input type="checkbox" id="slot2" name="slot" value="C">
+                <label for="slot3">C</label><br>    
+            </div>
+            <div>
+                
+                <label for="teachers">Choose a faculty.</label>
+                <select id="teachers" name="teachers" size="4">
+                    <option value="RD Sharma">RD Sharma</option>
+                    <option value="RS Aggrawaal">RS Aggrawaal</option>
+                    <option value="HC Verma">HC Verma</option>
+                    <option value="DC Pandey">DC Pandey</option>
+                </select><br>
+                <button type="submit">Submit</button>
+            </div>    
+            
+        </div>
+    </form>
+        
+        
+</body>
+</html>

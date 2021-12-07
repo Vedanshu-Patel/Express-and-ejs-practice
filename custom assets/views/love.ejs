@@ -1,0 +1,10 @@
+<%- include ("partials/header.ejs") %>
+
+<h1>I love <%= thingv %></h1>
+<% if(thingv === "dogs"){%>
+    <p>Good choice!!</p>
+<% }else{ %>
+        <p>Bad choice!!!</p>
+<% } %>
+
+<%- include ("partials/footer.ejs") %>
